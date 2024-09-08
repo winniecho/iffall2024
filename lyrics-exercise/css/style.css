@@ -1,0 +1,57 @@
+/* Base styles */
+body {
+    font-family: 'Cursive', sans-serif;
+    background-image: url('https://i.pinimg.com/564x/4d/c0/04/4dc004882d072842f31468101264069e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+/* Lyrics container */
+.lyrics {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Verse and chorus styling */
+.verse, .chorus {
+    margin-bottom: 20px;
+}
+
+.verse p, .chorus p {
+    font-size: 1.5em;
+    text-align: left;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Chorus specific styles */
+.chorus {
+    font-style: italic;
+    color: #444;
+}
