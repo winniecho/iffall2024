@@ -1,0 +1,91 @@
+/* General Page Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+}
+
+.column {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #3ea0f6;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #dcd6d6;
+    padding-bottom: 5px;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-left: 20px;
+    color: #666;
+}
+
+/* Paragraph Styling */
+p {
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+/* Font Weight */
+.bold {
+    font-weight: bold;
+}
+
+/* Font Style */
+.italic {
+    font-style: italic;
+}
+
+/* Letter Spacing */
+.wide {
+    letter-spacing: 0.3em;
+}
+
+.narrow {
+    letter-spacing: -0.06em;
+}
+
+/* Text Decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+/* Text Transform */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
