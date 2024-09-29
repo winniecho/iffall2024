@@ -43,41 +43,40 @@
       <p>I've started a list below, with a single item. Let's begin by populating the HTML of our list. <em>Don't be alarmed: The pictures are going to be huge. We'll take care of that in a minute when we add css.</em></p>
 
       <ol class="instructions">
-        <li>Replicate the <code class="tag">li</code> element below to make a new <code class="tag">li</code> for eight people. You should end up with a single <code class="tag">ul</code> containing eight list items, each item with a photo and name.</li>
-      </ol>
-
-      <ul class="grid using-inline-block">
-        <li>
-          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
-          <div>Abram Siemsen</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Sophie Leong portrait">
-            <div>Sophie Leong</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Chelsea Chun portrait">
-            <div>Chelsea Chun</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Joy Ani portrait">
-            <div>Joy Ani</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Lizette Arroyo portrait">
-            <div>Lizette Arroyo</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="July Echevarria portrait">
-            <div>July Echevarria</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Elena Caballero portrait">
-            <div>Elena Caballero</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Rita Wang portrait">
-            <div>Rita Wang</div>
+        <ul class="grid using-inline-block">
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Oscar Linton portrait">
+              <div>Oscar Linton</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Maya Fletcher portrait">
+              <div>Maya Fletcher</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Lucas Ortega portrait">
+              <div>Lucas Ortega</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Isabella Perez portrait">
+              <div>Isabella Perez</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Aiden Harris portrait">
+              <div>Aiden Harris</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Nina Sullivan portrait">
+              <div>Nina Sullivan</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Ethan Patel portrait">
+              <div>Ethan Patel</div>
+            </li>
+            <li>
+              <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Zara Gomez portrait">
+              <div>Zara Gomez</div>
+            </li>
+          </ul>
         </li>
       </ul>
 
@@ -135,101 +134,101 @@
 
       <ol class="instructions">
         <li>Copy the entire <code class="tag">ul</code> grid from the previous section, and paste it here, then change its class list to be <code>class="grid using-flex"</code>.</li>
-      </ol>
-
-      <ul class="grid using-flex">
-        <li>
-          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
-          <div>Abram Siemsen</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Sophie Leong portrait">
-            <div>Sophie Leong</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Chelsea Chun portrait">
-            <div>Chelsea Chun</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Joy Ani portrait">
-            <div>Joy Ani</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Lizette Arroyo portrait">
-            <div>Lizette Arroyo</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="July Echevarria portrait">
-            <div>July Echevarria</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Elena Caballero portrait">
-            <div>Elena Caballero</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Rita Wang portrait">
-            <div>Rita Wang</div>
-        </li>
-      </ul>
-
-      <p>Look, we picked up a bunch of existing styles from the shared <code>grid</code> class, so our images are already sized, the text is centered, etc. Hurray for shared classes to avoid repetition!</p>
-
-      <ol class="instructions">
-        <li>Create a selector for this grid's specific class. Add the following rules:</li>
-        <li><code>display: flex;</code></li>
-        <li><code>flex-wrap: wrap;</code></li>
-      </ol>
-
-      <p>A nice tidy grid once again! In previous methods, the critical rules for making the grid were appled to the child elements, the <code class="tag">li</code>s. This time, we're applying a rule to the parent element, the <code class="tag">ul</code>. Flex layout can feel a little strange at first because we control children indirectly through rules applied to the parent container, but when you're used to it, it's a very convenient and, uh, flexible (sorry) system. <em>(It's also the approach I normally use for grids myself.)</em></p>
-
+    </ol>
+    
+    <ul class="grid using-flex">
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Oliver Miles portrait">
+        <div>Oliver Miles</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Chloe Adams portrait">
+        <div>Chloe Adams</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Liam Bennett portrait">
+        <div>Liam Bennett</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Emma Harris portrait">
+        <div>Emma Harris</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Benjamin Ortiz portrait">
+        <div>Benjamin Ortiz</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Mia Johnson portrait">
+        <div>Mia Johnson</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Henry Collins portrait">
+        <div>Henry Collins</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Amelia Thompson portrait">
+        <div>Amelia Thompson</div>
+      </li>
+    </ul>
+    
+    <p>Look, we picked up a bunch of existing styles from the shared <code>grid</code> class, so our images are already sized, the text is centered, etc. Hurray for shared classes to avoid repetition!</p>
+    
+    <ol class="instructions">
+      <li>Create a selector for this grid's specific class. Add the following rules:</li>
+      <li><code>display: flex;</code></li>
+      <li><code>flex-wrap: wrap;</code></li>
+    </ol>
+    
+    <p>A nice tidy grid once again! In previous methods, the critical rules for making the grid were applied to the child elements, the <code class="tag">li</code>s. This time, we're applying a rule to the parent element, the <code class="tag">ul</code>. Flex layout can feel a little strange at first because we control children indirectly through rules applied to the parent container, but when you're used to it, it's a very convenient and, uh, flexible (sorry) system. <em>(It's also the approach I normally use for grids myself.)</em></p>
+    
     </section>
-
+    
     <section>
-
-      <h1>Grids using <em>grid</em></h1>
-
-      <p>As with Flex layout, <em>Grid layout</em> is a very involved suite of tools, and we'll just use the most basic example here. For a complete reference, use the <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Complete Guide to Grid</a>.</p>
-
-      <p>Let's copy our grid <code class="tag">ul</code> a final time.</p>
-
-      <ol class="instructions">
-        <li>Copy the entire <code class="tag">ul</code> grid from the previous section, and paste it here, then change its class list to be <code>class="grid using-grid"</code>.</li>
-      </ol>
-
-      <ul class="grid using-grid">
-        <li>
-          <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
-          <div>Abram Siemsen</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Sophie Leong portrait">
-            <div>Sophie Leong</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Chelsea Chun portrait">
-            <div>Chelsea Chun</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Joy Ani portrait">
-            <div>Joy Ani</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Lizette Arroyo portrait">
-            <div>Lizette Arroyo</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="July Echevarria portrait">
-            <div>July Echevarria</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Elena Caballero portrait">
-            <div>Elena Caballero</div>
-        </li>
-        <li>
-            <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Rita Wang portrait">
-            <div>Rita Wang</div>
-        </li>
-      </ul>
+    
+    <h1>Grids using <em>grid</em></h1>
+    
+    <p>As with Flex layout, <em>Grid layout</em> is a very involved suite of tools, and we'll just use the most basic example here. For a complete reference, use the <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Complete Guide to Grid</a>.</p>
+    
+    <p>Let's copy our grid <code class="tag">ul</code> a final time.</p>
+    
+    <ol class="instructions">
+      <li>Copy the entire <code class="tag">ul</code> grid from the previous section, and paste it here, then change its class list to be <code>class="grid using-grid"</code>.</li>
+    </ol>
+    
+    <ul class="grid using-grid">
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Ava Green portrait">
+        <div>Ava Green</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Noah Mitchell portrait">
+        <div>Noah Mitchell</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Sophia Lee portrait">
+        <div>Sophia Lee</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="James Scott portrait">
+        <div>James Scott</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Charlotte Brown portrait">
+        <div>Charlotte Brown</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Jackson White portrait">
+        <div>Jackson White</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Emily Lewis portrait">
+        <div>Emily Lewis</div>
+      </li>
+      <li>
+        <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Alexander Davis portrait">
+        <div>Alexander Davis</div>
+      </li>
+    </ul>
 
       <ol class="instructions">
         <li>Create a selector for this grid's <code class="tag">ul</code> using it's specific class, and add the following rules:</li>
