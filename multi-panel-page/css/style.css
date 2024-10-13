@@ -1,0 +1,144 @@
+
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    font-style: normal;
+    background: white;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    line-height: 5px;
+    color: white;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0px;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding-top: 150px;    
+    padding-bottom: 188px;
+    background-color: rgba(255, 0, 0, .25);
+    background-image: url(https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+}
+
+section {
+   /* margin-left:;
+    margin-right:;*/
+    width: 960px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.section1{
+    padding-top: 27px;
+    width: 960px;
+    height: 700px;
+    margin: auto;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 0px;
+    padding-bottom: 19px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 17px;
+    margin-top: 19px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin-bottom: -2.1px;
+}
+
+
+.section1pic{
+    height: 300px;
+    width: 400px;
+    float: right;
+    margin: 0px 0px 40px 40px;
+    object-fit: cover;
+}
+
+img { 
+    object-fit: cover;
+}
+
+.section2{
+    margin: 0px auto 0px auto ;
+    width: 960px;
+    height: 600px;
+    padding-top: 18px;
+    padding-bottom: 61px;
+}
+
+
+.smalls {
+    height: 150px;
+    width: 200px;
+    float: left;
+    margin: 19px 0px 24px -6px;
+}
+
+.third {
+    font-size: 26px;
+    line-height: 36.2px;
+    text-align: center;
+}
+
+.thirdsec {
+    width: 710px;
+    padding-top: 27px;
+    padding-bottom: 104px;
+}
+
+li{
+    display: block;
+    margin: -26px 0px 7px -34px;
+    width: 240px;
+}
+
+.text {
+    margin-right: 68px;
+}
+
+li p {
+    width: 230px;
+    margin-top: -10px;
+    
+}
+
+.grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    margin-top: 2.95em;
+}
+
+footer {
+    margin: 0px auto;
+    width: 960px; 
+    padding: 22px 0px 50px 0px;
+}
+
+div {
+        width: auto;
+        height: auto;
+        background-color: lightblue;
+    }
