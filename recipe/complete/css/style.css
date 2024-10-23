@@ -535,6 +535,8 @@ footer {
     }
 }
 
+/* [Previous CSS remains the same until Dark Mode section] */
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     body {
@@ -553,8 +555,20 @@ footer {
         color: #fff;
     }
     
+    .site-logo {
+        color: #ff8177; /* Lighter version of the logo color for dark mode */
+    }
+    
     .nav-menu a {
-        color: #e0e0e0;
+        color: #f0f0f0; /* Lighter text for better visibility */
+    }
+    
+    .recipe-header h1 {
+        color: #ffffff; /* Pure white for main title */
+    }
+    
+    .recipe-info {
+        color: #d0d0d0; /* Lighter gray for recipe info */
     }
     
     .recipe-description,
@@ -568,11 +582,24 @@ footer {
     
     .nutrition-facts li {
         border-bottom-color: #333;
+        color: #d0d0d0; /* Lighter text for nutrition facts */
     }
     
     .subscribe-form input {
         background-color: #333;
         border-color: #404040;
         color: #e0e0e0;
+    }
+
+    .recipe-rating {
+        color: #ff8177; /* Matching the logo color */
+    }
+
+    .comment {
+        border-bottom-color: #333;
+    }
+
+    .comment strong {
+        color: #f0f0f0; /* Lighter text for comment author names */
     }
 }
