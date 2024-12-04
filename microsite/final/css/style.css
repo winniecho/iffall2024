@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+}
+
+.intro-section {
+    width: 1440px;
+    height: 1000px;
+    position: relative;
+    background: linear-gradient(180deg, 
+        #0013B9 0%, 
+        #0000FF 18%, 
+        #3D3DFF 33%, 
+        #7D8ED1 49%, 
+        #AEBCE6 73%, 
+        #FAFAFC 100%
+    );
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    padding: 44px 20px;
+}
+
+.tagline {
+    text-align: center;
+    color: #ffffff;
+    font-size: 27.02px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.20px;
+    margin-bottom: 40px;
+}
+
+.heading {
+    text-align: center;
+    color: #F7E948;
+    font-size: 77.19px;
+    font-weight: 700;
+    line-height: 84px;
+    margin-bottom: 40px;
+    padding: 10;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.welcome-text {
+    position: absolute;
+    bottom: 61px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 916.87px;
+    max-width: 90%;
+    text-align: center;
+    color: #F5F5F7;
+    font-size: 30.88px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.13px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 72%);
+}
+  
+  /* Introduction Section */
+  .introduction h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .introduction p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('path-to-your-font/SF-Pro-Display-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('path-to-your-font/SF-Pro-Text-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('path-to-your-font/SF-Pro-Text-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.intro-heading {
+    width: 356px;
+    height: 64px;
+    position: absolute;
+    left: 558px;
+    top: 79px;
+    color: #F5F5F7;
+    font-size: 62.25px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    line-height: 64px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.journey-container {
+    width: 698px;
+    height: 84px;
+    padding: 0 12.60px 0 12.80px;
+    position: absolute;
+    left: 371px;
+    top: 628px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journey-text {
+    width: 672.60px;
+    height: 85px;
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 23.06px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.22px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.description {
+    width: 461px;
+    height: 176px;
+    position: absolute;
+    left: 489px;
+    top: 691px;
+    text-align: center;
+    color: #1D1D1F;
+    font-size: 17px;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.learn-more-link {
+    width: 148.72px;
+    height: 56px;
+    position: absolute;
+    left: 646px;
+    top: 849px;
+    padding: 18px 30.53px 18px 31px;
+    border-radius: 980px;
+    border: 1px solid #1D1D1F;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.learn-more-link span {
+    width: 87.19px;
+    height: 20px;
+    text-align: center;
+    color: #1D1D1F;
+    font-size: 17px;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.character-svg {
+    width: 516px;
+    height: 516px;
+    position: absolute;
+    left: 42px;
+    top: 317px;
+}
+
+.logo {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 320px;
+    top: -2px;
+}
+  /* Main Characters Section */
+  .main-characters {
+    background: #f3f4f6;
+    padding: 50px 20px;
+  }
+  
+  .main-characters h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1e1e1e;
+    font-family: SF Pro Display, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .character-card {
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #1e1e1e;
+    padding: 42px 21px 20px;
+    transition: transform 0.2s;
+  }
+  
+  .character-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .spongebob-card { background-color: rgba(247, 233, 72, 1); }
+  .patrick-card { background-color: rgba(255, 128, 139, 1); }
+  .squidward-card { background-color: rgba(156, 218, 243, 1); }
+  .krabs-card { background-color: rgba(255, 89, 89, 1); }
+  .sandy-card { background-color: rgba(162, 107, 74, 1); }
+  .plankton-card { background-color: rgba(144, 238, 144, 1); }
+  
+  .character-name {
+    letter-spacing: 0.2px;
+    font-family: SF Pro Display, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 22px;
+  }
+  
+  .character-description {
+    letter-spacing: -0.37px;
+    font-family: SF Pro Text, -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+  
+  .character-image {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 991px) {
+    .character-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .character-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .character-card {
+      padding: 30px 15px 15px;
+    }
+    
+    .character-name {
+      font-size: 24px;
+    }
+    
+    .character-image {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  /* How the Show Came to Be */
+ /* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --apple-com-shark: #1d1d1f;
+    --apple-com-athens-gray: #f5f5f7;
+    --apple-com-mischka: #d2d2d7;
+  }
+  
+  body {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  /* Section Container */
+  .section-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 174px 0 -40px;
+    padding: 0 80px;
+  }
+  
+  /* History Section */
+  .main-title,
+  .section-title,
+  .franchise-title {
+    color: var(--apple-com-shark);
+    letter-spacing: -0.28px;
+    align-self: start;
+    font: 700 54px/1 "SF Pro Display", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .history-background {
+    border-radius: 28px;
+    background: var(--apple-com-athens-gray);
+    margin: 90px 0 0;
+    padding: 127px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .history-content {
+    margin-bottom: -25px;
+  }
+  
+  .history-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .history-left {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  
+  .concept-container {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    flex-direction: column;
+    color: var(--apple-com-shark);
+    letter-spacing: 0.2px;
+    font: 700 27px "SF Pro Display", sans-serif;
+  }
+  
+  .concept-header {
+    display: flex;
+    gap: 23px;
+    line-height: 1;
+  }
+  
+  .concept-title {
+    flex-grow: 1;
+  }
+  
+  .concept-icon {
+    aspect-ratio: 1.82;
+    object-fit: contain;
+    width: 20px;
+    margin: auto 0;
+  }
+  
+  .concept-description {
+    letter-spacing: -0.37px;
+    margin-top: 28px;
+    font: 400 17px/25px "SF Pro Text", -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .milestone-section {
+    border-top: 1px solid var(--apple-com-mischka);
+    display: flex;
+    margin-top: 46px;
+    gap: 40px 100px;
+    line-height: 32px;
+    padding: 31px 0;
+    justify-content: center;
+  }
+  
+  .milestone-title {
+    width: 272px;
+  }
+  
+  .milestone-icon {
+    aspect-ratio: 2;
+    object-fit: contain;
+    width: 20px;
+    margin: auto 0;
+  }
+  
+  .history-right {
+    width: 65%;
+    margin-left: 20px;
+  }
+  
+  .history-image {
+    aspect-ratio: 1.29;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  /* Franchise Section */
+  .franchise-title {
+    margin-top: 187px;
+  }
+  
+  /* Carousel Styles */
+.carousel {
+    margin-top: 90px;
+    position: relative;
+    padding-bottom: 100px; /* Added padding at bottom */
+  }
+  
+  .carousel__slides {
+    position: relative;
+    min-height: 800px;
+    list-style: none;
+    margin-bottom: 100px; /* Added margin to create space */
+  }
+  
+  .carousel__slide {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .carousel__slide-content {
+    border-radius: 28px;
+    background: var(--apple-com-athens-gray);
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--apple-com-shark);
+  }
+  
+  .slide-title {
+    font: 700 27px/1 "SF Pro Display", -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+  }
+  
+  .slide-description {
+    margin-top: 28px;
+    max-width: 48rem;
+    font: 400 17px/21px "SF Pro Text", -apple-system, Roboto, Helvetica, sans-serif;
+    letter-spacing: -0.37px;
+  }
+  
+  .slide-description em {
+    font-style: italic;
+    color: var(--apple-com-shark);
+  }
+  
+  .slide-image {
+    margin-top: 57px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .carousel__thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px; /* Increased from 60px */
+    padding: 40px 0 60px; /* Increased padding */
+    list-style: none;
+  }
+  
+  .thumbnail-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thumbnail-img:hover {
+    opacity: 0.75;
+  }
+  
+  /* Radio button controls */
+  .carousel__radio {
+    display: none;
+  }
+  
+  #slide-1:checked ~ .carousel__slides .carousel__slide:nth-child(1),
+  #slide-2:checked ~ .carousel__slides .carousel__slide:nth-child(2),
+  #slide-3:checked ~ .carousel__slides .carousel__slide:nth-child(3),
+  #slide-4:checked ~ .carousel__slides .carousel__slide:nth-child(4) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .carousel {
+      margin-top: 40px;
+      margin-bottom: 60px;
+      padding-bottom: 60px;
+    }
+  
+    .carousel__slides {
+      min-height: 400px;
+      margin-bottom: 60px;
+    }
+  
+    .carousel__slide-content {
+      padding: 20px;
+    }
+  
+    .slide-image {
+      margin-top: 40px;
+    }
+  
+    .carousel__thumbnails {
+      margin-top: 60px;
+      padding: 40px 0 40px;
+      gap: 12px;
+    }
+  
+    .thumbnail-img {
+      width: 72px;
+      height: 72px;
+    }
+  }
