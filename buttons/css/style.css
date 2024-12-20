@@ -1,324 +1,386 @@
-body {
-    color: black;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
+/* Grid Layout */
 main {
-    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    font-family: "basic-sans", sans-serif;
-}
-
-.button-container {
-    border: 1px solid gainsboro;
-    margin: 0 10px 10px 0;
-    padding: 20px;
-    width: 300px;
-    height: 300px;
-    float: left;
-    overflow: hidden;
-    box-sizing: border-box;
+    grid-column: 1 / -1;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-a#mollyjogger {
+/* Button Container */
+.button-container {
+    margin: 0;
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    width: 185px;
-    height: 100px;
-    margin: auto;
-    background-color: rgba(61, 88, 16, 0.849);
+    min-height: 200px;
+    perspective: 1000px;
+}
+
+.button-container a {
+    display: inline-block;
     text-decoration: none;
-    border-radius: 18px;
-    color: white;
-    font-family: "henderson-slab-basic", serif;
-    font-size: 18px;
-    padding: 0;
 }
 
-a#mollyjogger i {
-    margin-left: 7px;
+.button-container img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-a#mollyjogger:hover {
-    background-color: rgb(206, 86, 46);
-    color: white;
-    transform: scale(1.08);
-    transition: transform 0.4s ease;
-    box-shadow: 2.5px 2.5px 2.5px #ebdcb9;
-}
 
-a#ideo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 140px;
-    height: 140px;
-    margin: auto;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03c1b1+19,ff7f04+72 */
-    background: linear-gradient(to bottom,  #03c1b1 19%,#ff7f04 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    text-decoration: none;
-    /* make circle shaped */
+/* Coca-Cola - Liquid Bubble Effect */
+#coca-cola {
+    background: #f40009;
+    padding: 20px 40px;
     border-radius: 50%;
-    color: white;
-    font-family: "operetta-18", serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 28px;
-    padding: 0;
+    position: relative;
+    overflow: hidden;
+    animation: bubble 3s infinite;
+    transition: all 0.5s ease;
 }
 
-a#ideo:hover {
-    background: white;
-    border: 2px solid black;
-    color: black;
-    transition: background 0.9s ease, color 0.5s ease;
+#coca-cola:hover {
+    background: #e60008;
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 
+        0 0 30px rgba(244, 0, 9, 0.6),
+        inset 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
-a#ibm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: auto;
-    text-decoration: none;
-    color: rgba(10, 110, 240, 0.992);
-    font-family: "mundial", sans-serif;
-    font-weight: 200;
-    font-style: bold;
-    font-size: 50px;
-    padding: 0;
-    transition: color 1s ease;
-}
-
-a#ibm i {
-    padding-top: 0.4rem;
-    margin-left: 6.5px;
-    font-size: 0.65em;
-}
-
-a#ibm:hover {
-    color: white;
-    background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#6446bf 94%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    width: 220px;
-    height: 120px;
-    border-radius: 10px;
-}
-
-a#cartoon-network {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: auto;
-    text-decoration: none;
-    color: black;
-    font-family: "blockhead-black-face", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 35px;
-    padding: 0;
-    line-height: 40px;
-    transition: transform 0.7s ease;
-}
-
-a#cartoon-network:hover {
-    transform: rotate(360deg);
-}
-
-a#npr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: auto;
-    text-decoration: none;
-    color: black;
-    font-family: "figtree", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 45px;
-    padding: 0;
-    transition: transform 0.5s ease;
-}
-
-a#npr:hover {
-    transform: scale(1.07);
-}
-
-a#npr:hover .line-1 {
-    color: rgb(190, 22, 22);
-}
-
-a#npr:hover .line-2 {
-    color: rgb(47, 137, 194);
-}
-
-a#nyer {
-    background-color: rgb(249, 204, 211);
-    height: 130px;
-    width: 285px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: auto;
-    text-decoration: none;
-    color: black;
-    font-family: "the-seasons", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    padding: 0;
-    transition: box-shadow 0.3s ease;
-}
-
-a#nyer:hover {
-    box-shadow:0 0 15px rgb(176, 171, 204);
-}
-
-a#fb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin: auto;
-    text-decoration: none;
-    color: rgb(61, 127, 226);
-    font-family: "owners-text", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 38px;
-    padding: 0;
-}
-
-a#fb:hover .color-1 {
-    color: rgb(184, 184, 184);
-    transition: 0.6s ease;
-}
-
-a#fb:hover .color-2 {
-    color: rgb(61, 127, 226);
-    transition: 0.6s ease;
-}
-
-a#exploding-kittens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 160px;
-    height: 160px;
-    text-decoration: none;
-    background: rgb(217, 63, 63);
-    border-radius: 12%;
-    color: white;
-    font-family: "komet", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 22px;
-}
-
-a#exploding-kittens:hover {
-   transform: scale(1.05), rotate(5deg);
-   box-shadow: 0 0 15px rgba(84, 78, 78, 0.842);
-}
-
-a#color-run {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 230px;
-    height: 110px;
-    text-decoration: none;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f762c0+28,f1da36+100 */
-    background: linear-gradient(to bottom,  #f762c0 28%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    border-radius: 48%;
-    color: black;
-    font-family: "urbana", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 28px;
-}
-
-a#color-run:hover {
-    transition-duration: .5s;
-    background: black;
-    color: white;
-}
-
-a#samsung {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 160px;
-    height: 185px;
-    text-decoration: none;
-    background-color: rgb(144, 144, 144);
-    color: white;
-    font-family: "cy", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 28px;
-}
-
-a#samsung:hover {
-   transition: 0.8s ease;
-    border-radius: 15%;
-}
-
-.button-container a {
-    display: inline-block;
-    padding: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button-container a img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.button-container a:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.button-container a:hover img {
+#coca-cola:hover img {
     transform: scale(1.1);
+    filter: brightness(1.2) contrast(1.1);
 }
 
-.button-container a {
-    display: inline-block;
-    padding: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+#coca-cola::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+    animation: rotate 4s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.button-container a img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    transition: transform 0.3s ease;
+#coca-cola:hover::before {
+    opacity: 1;
+    animation: rotate 2s linear infinite;
 }
 
-.button-container a:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+#coca-cola::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, 
+        rgba(255,255,255,0.8) 0%,
+        transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    mix-blend-mode: overlay;
 }
 
-.button-container a:hover img {
-    transform: scale(1.1);
+#coca-cola:hover::after {
+    opacity: 1;
+}
+
+@keyframes bubble {
+    0%, 100% { border-radius: 50%; }
+    50% { border-radius: 45% 55% 55% 45% / 46% 45% 55% 54%; }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Apple - Glitch Effect */
+#apple {
+    background: #ffffff;
+    padding: 20px;
+    position: relative;
+    filter: contrast(150%);
+}
+
+#apple:hover {
+    animation: glitch 0.5s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+        filter: hue-rotate(90deg);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+        filter: hue-rotate(180deg);
+    }
+    60% {
+        transform: translate(2px, 2px);
+        filter: hue-rotate(270deg);
+    }
+    80% {
+        transform: translate(2px, -2px);
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* NERF - Exploding Particles */
+#nerf {
+    background: #ff6b00;
+    padding: 15px 30px;
+    position: relative;
+}
+
+#nerf::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), 
+                rgba(255,255,255,0.3) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#nerf:hover::before {
+    opacity: 1;
+}
+
+#nerf:hover {
+    animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+/* Harley-Davidson - Fire Effect */
+#harley-davidson {
+    background: #000;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#harley-davidson::before,
+#harley-davidson::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(45deg, #ff4800, #ff6b00, #ff8800);
+    filter: blur(20px);
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+#harley-davidson::after {
+    mix-blend-mode: screen;
+}
+
+#harley-davidson:hover::before,
+#harley-davidson:hover::after {
+    transform: translateY(50%);
+    animation: fire 1s ease-in-out infinite;
+}
+
+@keyframes fire {
+    0%, 100% { filter: blur(20px) brightness(1); }
+    50% { filter: blur(25px) brightness(1.2); }
+}
+
+/* Michael Kors - Luxury Shine */
+#michael-kors {
+    background: linear-gradient(45deg, #e6d1a7, #f5e6c9, #e6d1a7);
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #c4a97c;
+}
+
+#michael-kors::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        rgba(255,255,255,0) 20%,
+        rgba(255,255,255,0.5) 50%,
+        rgba(255,255,255,0) 80%,
+        transparent 100%);
+    transform: translateX(-100%) rotate(45deg);
+    transition: transform 0.5s;
+}
+
+#michael-kors:hover::before {
+    transform: translateX(100%) rotate(45deg);
+}
+
+/* Sardella - Water Ripple */
+#sardella {
+    background: #2c3e50;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#sardella::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, 
+        rgba(255,255,255,0.3) 0%,
+        transparent 50%);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+#sardella:hover::before {
+    width: 300%;
+    height: 300%;
+    animation: ripple 1.5s linear infinite;
+}
+
+@keyframes ripple {
+    from { opacity: 1; transform: translate(-50%, -50%) scale(0.3); }
+    to { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Lyft - Neon Pulse */
+#lyft {
+    background: #000;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 0 10px #ff00bf,
+                0 0 20px #ff00bf,
+                0 0 30px #ff00bf;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        box-shadow: 0 0 10px #ff00bf,
+                   0 0 20px #ff00bf,
+                   0 0 30px #ff00bf;
+    }
+    to {
+        box-shadow: 0 0 20px #ff00bf,
+                   0 0 30px #ff00bf,
+                   0 0 40px #ff00bf;
+    }
+}
+
+#lyft:hover {
+    animation: glitch-neon 0.3s ease infinite;
+}
+
+@keyframes glitch-neon {
+    0%, 100% { transform: none; filter: none; }
+    33% { transform: skewX(2deg); filter: hue-rotate(90deg); }
+    66% { transform: skewX(-2deg); filter: hue-rotate(-90deg); }
+}
+
+/* Dime City - Mechanical Transform */
+#dime-city {
+    background: #2b2b2b;
+    padding: 20px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+#dime-city::before,
+#dime-city::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #333, #666);
+    transform: translateZ(-10px);
+    transition: transform 0.5s;
+}
+
+#dime-city:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+}
+
+#dime-city:hover::before {
+    transform: translateZ(-20px) rotate(5deg);
+}
+
+#dime-city:hover::after {
+    transform: translateZ(-30px) rotate(-5deg);
+}
+
+/* Missouri Botanical Garden - Growing Effect */
+#mobot {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#mobot::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center,
+        #4CAF50 0%,
+        transparent 50%);
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+@keyframes grow {
+    0% { clip-path: circle(0% at 50% 50%); }
+    100% { clip-path: circle(100% at 50% 50%); }
+}
+
+#mobot:hover::before {
+    opacity: 0.3;
+    transform: scale(2);
+    animation: grow 1s ease-out;
+}
+
+/* TuckerAllen - Professional Morph */
+#tucker-allen {
+    background: #003366;
+    padding: 20px;
+    clip-path: polygon(
+        0% 0%, 100% 0%, 100% 75%, 75% 100%, 0% 100%
+    );
+    transition: clip-path 0.4s;
+}
+
+#tucker-allen:hover {
+    clip-path: polygon(
+        25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%
+    );
+    animation: professional-pulse 2s infinite;
+}
+
+@keyframes professional-pulse {
+    0%, 100% { filter: brightness(1); }
+    50% { filter: brightness(1.2); }
 }
